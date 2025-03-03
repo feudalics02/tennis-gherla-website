@@ -3,7 +3,7 @@ import logo from '../Images/logo.png'
 import {SocialIcon} from 'react-social-icons'
 
 export default function Navbar(props) {
-    const pages = ['HOME', 'CONTACT', 'FACILITIES', 'PRICES', 'GALLERY']
+    const pages = ['ACASĂ', 'CONTACT', 'FACILITĂȚI', 'PREȚURI', 'GALERIE']
 
     return (
         <nav className='top-0 left-0 fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-lg'>
