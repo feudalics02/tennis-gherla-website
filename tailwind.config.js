@@ -5,6 +5,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+                heading: ['Playfair Display', 'serif'],
+            },
             textUnderlineOffset: {
                 14: '14px',
             },

@@ -14,7 +14,7 @@ export default function App() {
                     alt='Wallpaper'
                 />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
-                    <h1 className='text-6xl font-bold text-white mb-4 animate-slide-up'>
+                    <h1 className='text-6xl font-heading font-bold text-white mb-4 animate-slide-up'>
                         Welcome to Our Tennis Club
                     </h1>
                     <p className='text-xl text-white mb-8 animate-slide-up animation-delay-100'>
