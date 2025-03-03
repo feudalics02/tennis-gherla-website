@@ -31,7 +31,7 @@ export default function App() {
             <Navbar selected={0}/>
             
             {/* Hero Section */}
-            <div className='flex-grow relative h-[70vh] md:h-[80vh]'>
+            <div className='flex-grow relative h-[60vh] md:h-[70vh]'>
                 <div className='absolute inset-0 bg-black/50'></div>
                 <img 
                     src={wallpaper} 
