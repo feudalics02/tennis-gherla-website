@@ -7,9 +7,13 @@ export default function Navbar(props) {
 
     return (
         <nav className='top-0 left-0 fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-lg'>
-            <div className='p-3 flex justify-center text-white bg-primary animate-fade-in'>
-                <FaPhone className='mt-1 mr-2'/>
-                <h4 className='cursor-pointer'>0743 086 789</h4>
+            <div className='py-3 flex justify-center text-white bg-gradient-to-r from-primary to-secondary animate-fade-in'>
+                <div className='flex items-center space-x-4'>
+                    <FaPhone className='mt-1'/>
+                    <h4 className='cursor-pointer hover:text-accent transition-colors'>0743 086 789</h4>
+                    <div className='h-5 w-px bg-white/30'></div>
+                    <h4 className='cursor-pointer hover:text-accent transition-colors'>info@tennisclub.com</h4>
+                </div>
             </div>
             <div className='w-full text-lg flex items-center justify-center space-x-8'>
                 <div className='p-5'>

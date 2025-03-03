@@ -15,10 +15,10 @@ export default function App() {
                 />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
                     <h1 className='text-6xl font-bold text-white mb-4 animate-slide-up'>
-                        Welcome to Our Resort
+                        Welcome to Our Tennis Club
                     </h1>
                     <p className='text-xl text-white mb-8 animate-slide-up animation-delay-100'>
-                        Your perfect getaway destination
+                        Your premier destination for tennis excellence
                     </p>
                     <button className='bg-accent text-white px-8 py-3 rounded-full hover:bg-secondary transition-all duration-300 animate-slide-up animation-delay-200'>
                         Book Now
