@@ -31,11 +31,11 @@ export default function App() {
             <Navbar selected={0}/>
             
             {/* Hero Section */}
-            <div className='flex-grow relative'>
+            <div className='flex-grow relative h-[70vh] md:h-[80vh]'>
                 <div className='absolute inset-0 bg-black/50'></div>
                 <img 
                     src={wallpaper} 
-                    className='w-full h-screen object-cover' 
+                    className='w-full h-full object-cover' 
                     alt='Wallpaper'
                 />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
