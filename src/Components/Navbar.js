@@ -48,6 +48,31 @@ export default function Navbar(props) {
                                 }`}></div>
                             </div>
                         ))}
+                        </div>
+                        <div className='flex items-center space-x-4'>
+                            <div className='text-right'>
+                                <p className='text-sm font-medium'>Program:</p>
+                                <p className='text-sm'>L-V: 08:00 - 22:00</p>
+                                <p className='text-sm'>S-D: 09:00 - 20:00</p>
+                            </div>
+                            <div className='h-12 w-px bg-gray-200'></div>
+                            <div className='flex space-x-2'>
+                                <SocialIcon 
+                                    url='www.facebook.com' 
+                                    className='hover:opacity-80 transition-opacity duration-200'
+                                    fgColor='white'
+                                    bgColor='transparent'
+                                    style={{ height: 28, width: 28 }}
+                                />
+                                <SocialIcon 
+                                    url='www.instagram.com' 
+                                    className='hover:opacity-80 transition-opacity duration-200'
+                                    fgColor='white'
+                                    bgColor='transparent'
+                                    style={{ height: 28, width: 28 }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button 
