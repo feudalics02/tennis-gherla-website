@@ -22,6 +22,31 @@ export default function Navbar(props) {
                         <p className='text-sm'>Program: Luni-Vineri 08:00 - 22:00</p>
                         <div className='h-4 w-px bg-white/30'></div>
                         <p className='text-sm'>Sâmbătă-Duminică 09:00 - 20:00</p>
+                        </div>
+                        <div className='flex items-center space-x-4'>
+                            <div className='text-right'>
+                                <p className='text-sm font-medium'>Program:</p>
+                                <p className='text-sm'>L-V: 08:00 - 22:00</p>
+                                <p className='text-sm'>S-D: 09:00 - 20:00</p>
+                            </div>
+                            <div className='h-12 w-px bg-gray-200'></div>
+                            <div className='flex space-x-2'>
+                                <SocialIcon 
+                                    url='www.facebook.com' 
+                                    className='hover:opacity-80 transition-opacity duration-200'
+                                    fgColor='white'
+                                    bgColor='transparent'
+                                    style={{ height: 28, width: 28 }}
+                                />
+                                <SocialIcon 
+                                    url='www.instagram.com' 
+                                    className='hover:opacity-80 transition-opacity duration-200'
+                                    fgColor='white'
+                                    bgColor='transparent'
+                                    style={{ height: 28, width: 28 }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,7 +55,8 @@ export default function Navbar(props) {
                     <div className='p-2'>
                         <img src={logo} className='size-16 md:size-20 hover:scale-105 transition-transform duration-300' alt='Logo'></img>
                     </div>
-                    <div className='hidden md:flex space-x-4 lg:space-x-8 font-sans font-medium text-gray-700'>
+                    <div className='hidden md:flex items-center space-x-8'>
+                        <div className='flex space-x-4 lg:space-x-8 font-sans font-medium text-gray-700'>
                         {pages.map((page, index) => (
                             <div key={index} className='relative group'>
                                 <button className={`px-4 py-2 rounded-lg transition-all duration-300 ${
@@ -48,22 +74,6 @@ export default function Navbar(props) {
                             </div>
                         ))}
                     </div>
-                </div>
-                <div className='flex space-x-4'>
-                    <SocialIcon 
-                        url='www.facebook.com' 
-                        className='hover:opacity-80 transition-opacity duration-200'
-                        fgColor='white'
-                        bgColor='transparent'
-                        style={{ height: 32, width: 32 }}
-                    />
-                    <SocialIcon 
-                        url='www.instagram.com' 
-                        className='hover:opacity-80 transition-opacity duration-200'
-                        fgColor='white'
-                        bgColor='transparent'
-                        style={{ height: 32, width: 32 }}
-                    />
                 </div>
                 <button 
                     className='md:hidden p-2 text-gray-700 hover:text-primary transition-colors'
