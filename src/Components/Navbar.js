@@ -11,11 +11,18 @@ export default function Navbar(props) {
     return (
         <nav className='top-0 left-0 fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-lg'>
             <div className='py-3 flex justify-center text-white bg-gradient-to-r from-primary to-secondary animate-fade-in'>
-                <div className='flex items-center space-x-4 font-sans text-sm'>
-                    <FaPhone className='mt-0.5'/>
-                    <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>0743 086 789</h4>
-                    <div className='h-4 w-px bg-white/30'></div>
-                    <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>info@tennisclub.com</h4>
+                <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0'>
+                    <div className='flex items-center space-x-4 font-sans text-sm'>
+                        <FaPhone className='mt-0.5'/>
+                        <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>0743 086 789</h4>
+                        <div className='h-4 w-px bg-white/30'></div>
+                        <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>info@tennisclub.com</h4>
+                    </div>
+                    <div className='flex items-center space-x-4'>
+                        <p className='text-sm'>Program: Luni-Vineri 08:00 - 22:00</p>
+                        <div className='h-4 w-px bg-white/30'></div>
+                        <p className='text-sm'>Sâmbătă-Duminică 09:00 - 20:00</p>
+                    </div>
                 </div>
             </div>
             <div className='w-full flex items-center justify-between px-4 md:px-8 py-4'>
