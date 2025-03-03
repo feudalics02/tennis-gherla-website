@@ -1,8 +1,11 @@
-import {FaPhone} from 'react-icons/fa6';
+import {FaPhone, FaBars} from 'react-icons/fa6';
 import logo from '../Images/logo.png'
 import {SocialIcon} from 'react-social-icons'
 
+import { useState } from 'react';
+
 export default function Navbar(props) {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const pages = ['ACASĂ', 'CONTACT', 'FACILITĂȚI', 'PREȚURI', 'GALERIE']
 
     return (
@@ -15,12 +18,12 @@ export default function Navbar(props) {
                     <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>info@tennisclub.com</h4>
                 </div>
             </div>
-            <div className='w-full flex items-center justify-between px-8 py-4'>
-                <div className='flex items-center space-x-12'>
+            <div className='w-full flex items-center justify-between px-4 md:px-8 py-4'>
+                <div className='flex items-center space-x-4 md:space-x-12'>
                     <div className='p-2'>
-                        <img src={logo} className='size-20 hover:scale-105 transition-transform duration-300' alt='Logo'></img>
+                        <img src={logo} className='size-16 md:size-20 hover:scale-105 transition-transform duration-300' alt='Logo'></img>
                     </div>
-                    <div className='flex space-x-8 font-sans font-medium text-gray-700'>
+                    <div className='hidden md:flex space-x-4 lg:space-x-8 font-sans font-medium text-gray-700'>
                         {pages.map((page, index) => (
                             <div key={index} className='relative group'>
                                 <button className={`px-4 py-2 rounded-lg transition-all duration-300 ${
@@ -54,6 +57,29 @@ export default function Navbar(props) {
                         bgColor='transparent'
                         style={{ height: 32, width: 32 }}
                     />
+                </div>
+                <button 
+                    className='md:hidden p-2 text-gray-700 hover:text-primary transition-colors'
+                    onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+                >
+                    <FaBars className='w-6 h-6' />
+                </button>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-sm`}>
+                <div className='flex flex-col space-y-2 px-4 py-2 font-sans font-medium text-gray-700'>
+                    {pages.map((page, index) => (
+                        <div key={index} className='relative'>
+                            <button className={`w-full text-left px-4 py-2 rounded-lg transition-all duration-300 ${
+                                props.selected === index 
+                                    ? 'text-primary bg-primary/10'
+                                    : 'hover:text-primary hover:bg-primary/5'
+                            }`}>
+                                {page}
+                            </button>
+                        </div>
+                    ))}
                 </div>
             </div>
         </nav>

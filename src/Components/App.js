@@ -14,13 +14,13 @@ export default function App() {
                     alt='Wallpaper'
                 />
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
-                    <h1 className='text-6xl font-heading font-bold text-white mb-4 animate-slide-up'>
+                    <h1 className='text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center'>
                         Bine ați venit la Clubul Nostru de Tenis
                     </h1>
-                    <p className='text-xl text-white mb-8 animate-slide-up animation-delay-100'>
+                    <p className='text-lg sm:text-xl text-white mb-8 animate-slide-up animation-delay-100 px-4 text-center'>
                         Destinația ta de top pentru excelență în tenis
                     </p>
-                    <button className='bg-accent text-white px-8 py-3 rounded-full hover:bg-secondary transition-all duration-300 animate-slide-up animation-delay-200'>
+                    <button className='bg-accent text-white px-6 py-2 sm:px-8 sm:py-3 rounded-full hover:bg-secondary transition-all duration-300 animate-slide-up animation-delay-200'>
                         Rezervă acum
                     </button>
                 </div>
