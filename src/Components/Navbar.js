@@ -23,9 +23,9 @@ export default function Navbar() {
                         <span>0743 086 789</span>
                     </div>
                     <div className="flex items-center space-x-4">
-                        <span>Luni-Vineri: 08:00 - 22:00</span>
+                        <span>Luni - Vineri: 08:00 - 22:00</span>
                         <span className="hidden md:inline">|</span>
-                        <span>Sâmbătă-Duminică: 09:00 - 20:00</span>
+                        <span>Sâmbătă - Duminică: 09:00 - 20:00</span>
                     </div>
                 </div>
             </div>
