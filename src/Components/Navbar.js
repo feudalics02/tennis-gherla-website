@@ -41,7 +41,7 @@
                         </div>
 
                         {/* Desktop navigation */}
-                        <div className="flex max-md:hidden justify-center items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm ml-8">
+                        <div className="flex-1 flex max-md:hidden justify-center items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm mx-8">
                             {navigation.map((item) => (
                                 <a
                                     key={item.name}
