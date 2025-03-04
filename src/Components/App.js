@@ -38,9 +38,9 @@ export default function App() {
                     className='w-full h-full object-cover' 
                     alt='Wallpaper'
                 />
-                <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
-                    <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight'>
-                        Bine ați venit la Clubul Nostru de Tenis
+                <div className='absolute top-2/3 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
+                    <h1 className='text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight'>
+                        Tenis Club Gherla
                     </h1>
                     <p className='text-base sm:text-lg md:text-xl text-white mb-8 animate-slide-up animation-delay-100 px-4 text-center max-w-2xl mx-auto leading-relaxed'>
                         Destinația ta de top pentru excelență în tenis
