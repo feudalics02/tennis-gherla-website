@@ -31,23 +31,27 @@ export default function App() {
             <Navbar selected={0}/>
             
             {/* Hero Section */}
-            <div className='flex-grow relative h-[60vh] md:h-[70vh]'>
-                <div className='absolute inset-0 bg-black/50'></div>
+            <div className='flex-grow relative h-[70vh] md:h-[80vh]'>
+                <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-black/30'></div>
                 <img 
                     src={wallpaper} 
-                    className='w-full h-full object-cover' 
+                    className='w-full h-full object-cover object-center' 
                     alt='Wallpaper'
                 />
-                <div className='absolute top-2/3 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
-                    <h1 className='text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight'>
-                        Tenis Club Gherla
-                    </h1>
-                    <p className='text-base sm:text-lg md:text-xl text-white mb-8 animate-slide-up animation-delay-100 px-4 text-center max-w-2xl mx-auto leading-relaxed'>
-                        Destinația ta de top pentru excelență în tenis
-                    </p>
-                    <button className='bg-accent text-white px-6 py-2 sm:px-8 sm:py-3 rounded-full hover:bg-secondary transition-all duration-300 animate-slide-up animation-delay-200'>
-                        Rezervă acum
-                    </button>
+                <div className='absolute bottom-20 md:bottom-1/4 left-1/2 transform -translate-x-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
+                    <div className='space-y-6'>
+                        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight drop-shadow-lg'>
+                            Tenis Club Gherla
+                        </h1>
+                        <p className='text-lg sm:text-xl md:text-2xl text-white/90 mb-8 animate-slide-up animation-delay-100 px-4 text-center max-w-2xl mx-auto leading-relaxed font-medium drop-shadow-md'>
+                            Destinația ta de top pentru excelență în tenis
+                        </p>
+                        <div className='animate-slide-up animation-delay-200'>
+                            <button className='bg-accent text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full hover:bg-secondary transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105'>
+                                Rezervă acum
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
