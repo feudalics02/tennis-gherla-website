@@ -9,8 +9,8 @@ export default function Footer() {
                 </div>
                 <div className='w-24 h-px bg-white/50'></div>
                 <div className='flex space-x-4 pb-4 md:pb-0'>
-                    <SocialIcon url='www.facebook.com' className='hover:opacity-80 transition-opacity' style={{ height: 28, width: 28 }} />
-                    <SocialIcon url='www.instagram.com' className='hover:opacity-80 transition-opacity' style={{ height: 28, width: 28 }} />
+                    <SocialIcon url='https://www.facebook.com/profile.php?id=100005549598505' target="_blank" className='hover:opacity-80 transition-opacity' style={{ height: 28, width: 28 }} />
+                    <SocialIcon url='https://www.instagram.com/tenis_club_gherla/' target="_blank" className='hover:opacity-80 transition-opacity' style={{ height: 28, width: 28 }} />
                 </div>
             </div>
         </footer>
