@@ -45,7 +45,26 @@ export default function Navbar(props) {
             <div
                 className='py-3 flex justify-center text-white bg-gradient-to-r from-primary to-secondary animate-fade-in'>
                 <div
-                    className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0'>
+                    className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 relative'>
+                    {/* Header Tabs */}
+                    <div className='absolute top-full left-0 w-full bg-white shadow-md'>
+                        <div className='container mx-auto px-4'>
+                            <div className='flex space-x-8 py-3'>
+                                <a href="#terenuri" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Facilități
+                                </a>
+                                <a href="#abonamente" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Prețuri
+                                </a>
+                                <a href="#galerie-foto" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Galerie
+                                </a>
+                                <a href="#contact" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div className='flex items-center space-x-4 font-sans text-sm'>
                         <FaPhone className='mt-0.5'/>
                         <h4 className='cursor-pointer hover:text-accent transition-colors duration-200'>0743 086
