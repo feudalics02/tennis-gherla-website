@@ -108,6 +108,9 @@ export default function App() {
 
                                     const closeBtn = document.createElement('button');
                                     closeBtn.className = 'absolute top-4 right-4 text-white hover:text-primary transition-colors duration-200 bg-black/50 rounded-full p-1';
+                                    closeBtn.style.position = 'absolute';
+                                    closeBtn.style.top = '1rem';
+                                    closeBtn.style.right = '1rem';
                                     closeBtn.innerHTML = `
                                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
