@@ -97,22 +97,18 @@ export default function App() {
                                 key={index} 
                                 className='relative cursor-pointer group'
                                 onClick={() => {
-                                    // Remove any existing lightbox
                                     const existingLightbox = document.getElementById('lightbox');
                                     if (existingLightbox) existingLightbox.remove();
 
-                                    // Create lightbox container
                                     const lightbox = document.createElement('div');
                                     lightbox.id = 'lightbox';
                                     lightbox.className = 'fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4';
                                     lightbox.onclick = () => lightbox.remove();
 
-                                    // Create image container
                                     const imgContainer = document.createElement('div');
                                     imgContainer.className = 'relative max-w-[90vw] max-h-[90vh]';
                                     imgContainer.onclick = (e) => e.stopPropagation();
 
-                                    // Create close button
                                     const closeBtn = document.createElement('button');
                                     closeBtn.className = 'absolute -top-8 -right-8 text-white hover:text-primary transition-colors duration-200';
                                     closeBtn.innerHTML = `
@@ -122,12 +118,10 @@ export default function App() {
                                     `;
                                     closeBtn.onclick = () => lightbox.remove();
 
-                                    // Create image
                                     const img = new Image();
                                     img.src = `/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`;
                                     img.className = 'rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain';
 
-                                    // Append elements
                                     imgContainer.appendChild(img);
                                     imgContainer.appendChild(closeBtn);
                                     lightbox.appendChild(imgContainer);
