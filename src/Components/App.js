@@ -64,22 +64,24 @@ export default function App() {
                     <div className='grid md:grid-cols-2 gap-8 items-center'>
                         <div className='space-y-4 text-gray-700'>
                             <p>
-                                Clubul de Tenis Gherla este un centru modern de tenis, dedicat pasionaților de toate nivelurile.
-                                Ne mândrim cu facilitățile noastre de ultimă generație și echipa noastră de antrenori profesioniști.
+                                Tenis Club Gherla este un club modern de tenis, dedicat pasionaților de toate nivelurile. Ne mândrim cu facilitățile noastre de ultimă generație, constând în trei terenuri de tenis, dintre care unul acoperit.
                             </p>
                             <p>
-                                Fondat în 2010, am devenit un punct de referință în comunitatea locală, oferind atât cursuri
-                                pentru începători, cât și antrenamente avansate pentru jucători competiționali.
+                                Fondat în urmă cu peste 20 de ani, am devenit un punct de referință în comunitatea locală, oferind cursuri pentru pasionații de tenis de toate vârstele și toate nivelurile de joc.
                             </p>
                             <p>
-                                Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm o comunitate puternică
-                                de iubitori ai acestui sport.
+                                Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm o comunitate puternică de iubitori ai acestui sport.
                             </p>
                         </div>
-                        <img 
-                            src='https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                            alt='About Us'
-                            className='rounded-lg shadow-lg'
+                        {/*<img */}
+                        {/*    src='https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'*/}
+                        {/*    alt='About Us'*/}
+                        {/*    className='rounded-lg shadow-lg'*/}
+                        {/*/>*/}
+                        <img
+                            src={`/gallery/teren-4.jpg`}
+                            alt={`Gallery 4`}
+                            className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                         />
                     </div>
                 </div>
@@ -92,7 +94,7 @@ export default function App() {
                         Galerie Foto
                     </h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
-                        {[1, 2, 3, 4].map((index) => (
+                        {[1, 2, 3].map((index) => (
                             <div 
                                 key={index} 
                                 className='relative cursor-pointer group'
@@ -129,7 +131,7 @@ export default function App() {
                                 }}
                             >
                                 <img 
-                                    src={`/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`}
+                                    src={`/gallery/teren-${index}.jpeg`}
                                     alt={`Gallery ${index}`}
                                     className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                                 />
