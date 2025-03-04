@@ -92,22 +92,26 @@ export default function App() {
                         Galerie Foto
                     </h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
-                        {[1, 2, 3].map((index) => (
-                            <div key={index} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
+                        {[1, 2, 3, 4].map((index) => (
+                            <div 
+                                key={index} 
+                                className='relative cursor-pointer group'
+                                onClick={() => {
+                                    const img = new Image();
+                                    img.src = `/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`;
+                                    img.className = 'fixed inset-0 m-auto max-w-[90vw] max-h-[90vh] object-contain z-50';
+                                    img.onclick = () => document.body.removeChild(img);
+                                    document.body.appendChild(img);
+                                }}
+                            >
                                 <img 
-                                    src={`/gallery/teren-${index}.jpeg`}
+                                    src={`/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`}
                                     alt={`Gallery ${index}`}
-                                    className='absolute inset-0 w-full h-full object-cover'
+                                    className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                                 />
+                                <div className='absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg'></div>
                             </div>
                         ))}
-                        <div key={4} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
-                            <img
-                                src={`/gallery/teren-4.jpg`}
-                                alt={`Gallery 4`}
-                                className='absolute inset-0 w-full h-full object-cover'
-                            />
-                        </div>
                     </div>
                 </div>
             </section>
