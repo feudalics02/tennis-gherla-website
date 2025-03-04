@@ -106,17 +106,16 @@ export default function App() {
                                     imgContainer.className = 'relative max-w-[90vw] max-h-[90vh]';
                                     imgContainer.onclick = (e) => e.stopPropagation();
 
-                                    const closeBtn = document.createElement('button');
-                                    closeBtn.className = 'absolute top-4 right-4 text-white hover:text-primary transition-colors duration-200 bg-black/50 rounded-full p-1';
-                                    closeBtn.style.position = 'absolute';
-                                    closeBtn.style.top = '1rem';
-                                    closeBtn.style.right = '1rem';
+                                    const closeBtn = document.createElement('div');
+                                    closeBtn.className = 'fixed top-4 right-4 z-50';
                                     closeBtn.innerHTML = `
-                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
+                                        <button class="text-white hover:text-primary transition-colors duration-200 bg-black/50 rounded-full p-1">
+                                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
                                     `;
-                                    closeBtn.onclick = () => lightbox.remove();
+                                    closeBtn.querySelector('button').onclick = () => lightbox.remove();
 
                                     const img = new Image();
                                     img.src = `/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`;
