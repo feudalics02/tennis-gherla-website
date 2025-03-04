@@ -73,11 +73,6 @@ export default function App() {
                                 Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm o comunitate puternică de iubitori ai acestui sport.
                             </p>
                         </div>
-                        {/*<img */}
-                        {/*    src='https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'*/}
-                        {/*    alt='About Us'*/}
-                        {/*    className='rounded-lg shadow-lg'*/}
-                        {/*/>*/}
                         <img
                             src={`/gallery/teren-4.jpg`}
                             alt={`Gallery 4`}
@@ -93,8 +88,8 @@ export default function App() {
                     <h2 className='text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center'>
                         Galerie Foto
                     </h2>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center'>
-                        {[1, 2, 3].map((index) => (
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mx-auto w-fit'>
+                        {[1, 2, 3, 2].map((index) => (
                             <div
                                 key={index}
                                 className='relative cursor-pointer justify-center justify-self-center mx-auto'
@@ -111,14 +106,16 @@ export default function App() {
                                     imgContainer.className = 'relative max-w-[90vw] max-h-[90vh]';
                                     imgContainer.onclick = (e) => e.stopPropagation();
 
-                                    const closeBtn = document.createElement('button');
-                                    closeBtn.className = 'absolute -top-8 -right-8 text-white hover:text-primary transition-colors duration-200';
+                                    const closeBtn = document.createElement('div');
+                                    closeBtn.className = 'fixed top-4 right-4 z-50';
                                     closeBtn.innerHTML = `
-                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
+                                        <button class="text-white hover:text-primary transition-colors duration-200 bg-black/50 rounded-full p-1">
+                                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
                                     `;
-                                    closeBtn.onclick = () => lightbox.remove();
+                                    closeBtn.querySelector('button').onclick = () => lightbox.remove();
 
                                     const img = new Image();
                                     img.src = `/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`;
