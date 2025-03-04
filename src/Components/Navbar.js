@@ -30,13 +30,13 @@
                 </div>
 
                 {/* Main navigation */}
-                <div className="container mx-auto px-4 relative z-10 bg-white/95 backdrop-blur-sm">
-                    <div className="flex items-center h-20 gap-8">
+                <div className="w-full mx-0 px-0 relative z-10 bg-white/95 backdrop-blur-sm rounded-sm">
+                    <div className="flex items-center h-20 gap-8 bg-white/95 justify-center">
                         {/* Logo */}
-                        <div className="flex-shrink-0">
+                        <div className="flex-shrink-0 pl-4">
                             <img
                                 src={logo}
-                                alt="Club de Tenis Logo"
+                                alt="Tennis Logo"
                                 className="h-16 w-auto hover:scale-105 transition-transform duration-300"
                             />
                         </div>
