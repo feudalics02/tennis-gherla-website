@@ -73,11 +73,6 @@ export default function App() {
                                 Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm o comunitate puternică de iubitori ai acestui sport.
                             </p>
                         </div>
-                        {/*<img */}
-                        {/*    src='https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'*/}
-                        {/*    alt='About Us'*/}
-                        {/*    className='rounded-lg shadow-lg'*/}
-                        {/*/>*/}
                         <img
                             src={`/gallery/teren-4.jpg`}
                             alt={`Gallery 4`}
@@ -93,7 +88,7 @@ export default function App() {
                     <h2 className='text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center'>
                         Galerie Foto
                     </h2>
-                    <div className='ml-8 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mx-auto w-fit'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mx-auto w-fit'>
                         {[1, 2, 3, 2].map((index) => (
                             <div
                                 key={index}
