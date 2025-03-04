@@ -30,7 +30,7 @@
                 </div>
 
                 {/* Main navigation */}
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="container mx-auto px-4 relative z-10 bg-white/95 backdrop-blur-sm">
                     <div className="flex items-center h-20 gap-8">
                         {/* Logo */}
                         <div className="flex-shrink-0">
@@ -42,7 +42,7 @@
                         </div>
 
                         {/* Desktop navigation */}
-                        <div className="flex-1 flex max-md:hidden justify-center items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm mx-8">
+                        <div className="flex-1 flex max-md:hidden justify-center items-center space-x-8 px-6 py-2 rounded-full mx-8">
                             {navigation.map((item) => (
                                 <a
                                     key={item.name}
