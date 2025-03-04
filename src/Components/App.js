@@ -92,15 +92,22 @@ export default function App() {
                         Galerie Foto
                     </h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
-                        {[1, 2, 3, 4].map((index) => (
+                        {[1, 2, 3].map((index) => (
                             <div key={index} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
                                 <img 
-                                    src={`/gallery/${index}.jpg`}
+                                    src={`/gallery/teren-${index}.jpeg`}
                                     alt={`Gallery ${index}`}
                                     className='absolute inset-0 w-full h-full object-cover'
                                 />
                             </div>
                         ))}
+                        <div key={4} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
+                            <img
+                                src={`/gallery/teren-4.jpg`}
+                                alt={`Gallery 4`}
+                                className='absolute inset-0 w-full h-full object-cover'
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
