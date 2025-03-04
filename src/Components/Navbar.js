@@ -17,13 +17,22 @@
             <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg">
                 {/* Top info bar */}
                 <div className="bg-gradient-to-r from-primary to-secondary">
-                    <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between text-white text-sm">
+                    <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between text-white">
                         <div className="flex items-center space-x-4">
-                            <FaPhone className="w-4 h-4" />
-                            <span>0743 086 789</span>
+                            <div className="flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-full">
+                                <FaPhone className="w-4 h-4" />
+                                <a href="tel:0743086789" className="hover:text-accent transition-colors duration-200">
+                                    0743 086 789
+                                </a>
+                            </div>
                         </div>
-                        <div className="flex items-center space-x-4">
-                            <span>Luni - Duminică: 08:00 - 22:00</span>
+                        <div className="flex items-center space-x-4 mt-2 md:mt-0">
+                            <div className="flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-full">
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Luni - Duminică: 08:00 - 22:00</span>
+                            </div>
                         </div>
                     </div>
                 </div>
