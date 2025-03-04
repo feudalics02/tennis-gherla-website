@@ -57,6 +57,9 @@
                             </button>
                         </div>
 
+                        {/* Spacer to push mobile menu button to the right */}
+                        <div className="flex-1 md:hidden"></div>
+
                         {/* Mobile menu button */}
                         <div className="flex md:hidden">
                             <button
