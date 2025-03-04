@@ -48,12 +48,13 @@ export default function Navbar() {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group"
                             >
                                 {item.name}
+                                <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
                             </a>
                         ))}
-                        <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors duration-300">
+                        <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
                             Rezervă
                         </button>
                     </div>
@@ -82,7 +83,7 @@ export default function Navbar() {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
+                                className="block px-4 py-3 rounded-md text-lg font-semibold text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors duration-200"
                             >
                                 {item.name}
                             </a>
