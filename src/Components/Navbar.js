@@ -18,8 +18,8 @@
                 {/* Top info bar */}
                 <div className="bg-gradient-to-r from-primary to-secondary">
                     <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between text-white">
-                        <div className="flex justify-center items-center space-x-4">
-                            <div className="flex justify-center items-center space-x-3 bg-white/10 px-4 py-2 rounded-full">
+                        <div className="flex-1 flex justify-center">
+                            <div className="flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-full">
                                 <FaPhone className="w-4 h-4" />
                                 <a href="tel:0743086789" className="hover:text-accent transition-colors duration-200">
                                     0743 086 789
