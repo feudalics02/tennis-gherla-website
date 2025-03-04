@@ -112,7 +112,7 @@ export default function App() {
                                     imgContainer.onclick = (e) => e.stopPropagation();
 
                                     const closeBtn = document.createElement('button');
-                                    closeBtn.className = 'absolute -top-8 -right-8 text-white hover:text-primary transition-colors duration-200';
+                                    closeBtn.className = 'absolute top-4 right-4 text-white hover:text-primary transition-colors duration-200 bg-black/50 rounded-full p-1';
                                     closeBtn.innerHTML = `
                                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
