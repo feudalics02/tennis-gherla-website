@@ -92,12 +92,15 @@ export default function App() {
                         Galerie Foto
                     </h2>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
-                        {[
-                            'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                            'https://images.unsplash.com/photo-1600185365483-0b1a3f14bf74?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                            'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                            'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        ].map((img, index) => (
+                        {[1, 2, 3, 4].map((index) => (
+                            <div key={index} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
+                                <img 
+                                    src={`/gallery/${index}.jpg`}
+                                    alt={`Gallery ${index}`}
+                                    className='absolute inset-0 w-full h-full object-cover'
+                                />
+                            </div>
+                        ))}
                             <div key={index} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
                                 <img 
                                     src={img}
