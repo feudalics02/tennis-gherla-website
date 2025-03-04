@@ -93,11 +93,11 @@ export default function App() {
                     <h2 className='text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center'>
                         Galerie Foto
                     </h2>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center'>
                         {[1, 2, 3].map((index) => (
-                            <div 
-                                key={index} 
-                                className='relative cursor-pointer group'
+                            <div
+                                key={index}
+                                className='relative cursor-pointer justify-center justify-self-center mx-auto'
                                 onClick={() => {
                                     const existingLightbox = document.getElementById('lightbox');
                                     if (existingLightbox) existingLightbox.remove();
