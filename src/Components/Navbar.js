@@ -1,9 +1,29 @@
-    import { useState } from 'react';
+    import { useState, useEffect } from 'react';
     import { FaBars, FaPhone, FaTimes } from 'react-icons/fa';
     import logo from '../Images/logo.png';
 
     export default function Navbar() {
         const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+        const [activeSection, setActiveSection] = useState('acasa');
+
+        useEffect(() => {
+            const handleScroll = () => {
+                const sections = ['acasa', 'facilitati', 'preturi', 'galerie', 'contact'];
+                for (const section of sections) {
+                    const element = document.getElementById(section);
+                    if (element) {
+                        const rect = element.getBoundingClientRect();
+                        if (rect.top <= 100 && rect.bottom >= 100) {
+                            setActiveSection(section);
+                            break;
+                        }
+                    }
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }, []);
 
         const navigation = [
             { name: 'Acasă', href: '#acasa' },
@@ -47,10 +67,14 @@
                                 <a
                                     key={item.name}
                                     href={item.href}
-                                    className="text-gray-700 hover:text-primary px-4 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group"
+                                    className={`text-gray-700 hover:text-primary px-4 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group ${
+                                        activeSection === item.href.slice(1) ? 'text-primary' : ''
+                                    }`}
                                 >
                                     {item.name}
-                                    <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
+                                    <span className={`absolute bottom-0 left-0 h-0.5 bg-primary ${
+                                        activeSection === item.href.slice(1) ? 'w-full' : 'w-0 group-hover:w-full'
+                                    } transition-all duration-300`}></span>
                                 </a>
                             ))}
                             <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
