@@ -64,13 +64,13 @@ export default function App() {
                     <div className='grid md:grid-cols-2 gap-8 items-center'>
                         <div className='space-y-4 text-gray-700'>
                             <p>
-                                Tenis Club Gherla este un club modern de tenis, dedicat pasionaților de toate nivelurile. Ne mândrim cu facilitățile noastre de ultimă generație, constând în trei terenuri de tenis, dintre care unul acoperit.
+                                <b>TENIS CLUB GHERLA</b> este un club modern de tenis, dedicat pasionaților de toate nivelurile. Ne mândrim cu facilitățile noastre constând în trei terenuri de tenis, dintre care unul acoperit, de hard.
                             </p>
                             <p>
-                                Fondat în urmă cu peste 20 de ani, am devenit un punct de referință în comunitatea locală, oferind cursuri pentru pasionații de tenis de toate vârstele și toate nivelurile de joc.
+                                Fondat în urmă cu <b>peste 20 de ani</b>, clubul a devenit un punct de referință în comunitatea locală, oferind cursuri pentru pasionații de tenis de toate vârstele și toate nivelurile de joc.
                             </p>
                             <p>
-                                Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm o comunitate puternică de iubitori ai acestui sport.
+                                Viziunea noastră este să promovăm tenisul ca stil de viață și să creăm <b>o comunitate puternică</b> de iubitori ai acestui sport.
                             </p>
                         </div>
                         <img
@@ -149,7 +149,7 @@ export default function App() {
                         {[
                             {
                                 name: 'Claudiu',
-                                message: 'Good tennis courts, excellent host, has covered arena'
+                                message: 'Good tennis courts, excellent host, covered arena.'
                             },
                             {
                                 name: 'Angela', 
@@ -157,7 +157,7 @@ export default function App() {
                             },
                             {
                                 name: 'Silvestru',
-                                message: 'Perfect'
+                                message: 'Perfect!'
                             }
                         ].map((review, index) => (
                             <div key={index} className='bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'>
