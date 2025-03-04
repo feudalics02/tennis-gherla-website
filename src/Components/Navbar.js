@@ -61,10 +61,24 @@ export default function Navbar(props) {
             <div className='w-full flex items-center justify-between px-4 md:px-8 py-4'>
                 <nav>
                     <div className='flex items-center space-x-4 md:space-x-12'>
-                        <div className='p-2'>
+                        <div className='p-2 flex items-center space-x-8'>
                             <img src={logo}
                                  className='size-16 md:size-20 hover:scale-105 transition-transform duration-300'
                                  alt='Logo'></img>
+                            <div className='hidden md:flex space-x-8'>
+                                <a href="#terenuri" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Facilități
+                                </a>
+                                <a href="#abonamente" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Prețuri
+                                </a>
+                                <a href="#galerie-foto" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Galerie
+                                </a>
+                                <a href="#contact" className='text-gray-700 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Contact
+                                </a>
+                            </div>
                         </div>
                         <div className='hidden md:flex items-center space-x-8'>
                             <div className='flex space-x-4 lg:space-x-8 font-sans font-medium text-gray-700'>
