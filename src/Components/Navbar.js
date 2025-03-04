@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
 
             {/* Main navigation */}
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -43,12 +43,12 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
                         {navigation.map((item) => (
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group"
+                                className="text-gray-700 hover:text-primary px-4 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group"
                             >
                                 {item.name}
                                 <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
