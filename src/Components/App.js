@@ -101,14 +101,6 @@ export default function App() {
                                 />
                             </div>
                         ))}
-                            <div key={index} className='relative aspect-square overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300'>
-                                <img 
-                                    src={img}
-                                    alt={`Gallery ${index + 1}`}
-                                    className='absolute inset-0 w-full h-full object-cover'
-                                />
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
