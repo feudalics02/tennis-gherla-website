@@ -42,8 +42,8 @@ export default function Navbar() {
                         />
                     </div>
 
-                    {/* Desktop navigation */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 md:flex items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
+                    {/* Desktop navigation - hidden on mobile */}
+                    <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center space-x-8 bg-white/95 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
                         {navigation.map((item) => (
                             <a
                                 key={item.name}
