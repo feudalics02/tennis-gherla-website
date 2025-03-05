@@ -1,6 +1,10 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import wallpaper from '../Images/wallpaper.jpg';
+import teren1 from '../../public/gallery/teren-1.jpeg';
+import teren2 from '../../public/gallery/teren-2.jpeg';
+import teren3 from '../../public/gallery/teren-3.jpeg';
+import teren4 from '../../public/gallery/teren-4.jpg';
 import { useEffect, useRef } from 'react';
 
 export default function App() {
@@ -74,7 +78,7 @@ export default function App() {
                             </p>
                         </div>
                         <img
-                            src={`/gallery/teren-4.jpg`}
+                            src={teren4}
                             alt={`Gallery 4`}
                             className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                         />
@@ -118,7 +122,10 @@ export default function App() {
                                     closeBtn.querySelector('button').onclick = () => lightbox.remove();
 
                                     const img = new Image();
-                                    img.src = `/gallery/teren-${index}.${index === 4 ? 'jpg' : 'jpeg'}`;
+                                    img.src = index === 4 ? teren4 : 
+                                              index === 1 ? teren1 :
+                                              index === 2 ? teren2 : 
+                                              teren3;
                                     img.className = 'rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain';
 
                                     imgContainer.appendChild(img);
@@ -128,7 +135,10 @@ export default function App() {
                                 }}
                             >
                                 <img 
-                                    src={`/gallery/teren-${index}.jpeg`}
+                                    src={index === 4 ? teren4 : 
+                                         index === 1 ? teren1 :
+                                         index === 2 ? teren2 : 
+                                         teren3}
                                     alt={`Gallery ${index}`}
                                     className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                                 />
