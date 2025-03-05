@@ -1,5 +1,6 @@
     import { useState, useEffect } from 'react';
     import { FaBars, FaPhone, FaTimes } from 'react-icons/fa';
+    import { Link } from 'react-router-dom';
     import logo from '../Images/logo.png';
 
     export default function Navbar() {
@@ -26,11 +27,11 @@
         }, []);
 
         const navigation = [
-            { name: 'Acasă', href: '#acasa' },
-            { name: 'Facilități', href: '#facilitati' },
-            { name: 'Prețuri', href: '#preturi' },
-            { name: 'Galerie', href: '#galerie' },
-            { name: 'Contact', href: '#contact' },
+            { name: 'Acasă', href: '/' },
+            { name: 'Facilități', href: '/facilitati' },
+            { name: 'Prețuri', href: '/preturi' },
+            { name: 'Galerie', href: '/galerie' },
+            { name: 'Contact', href: '/contact' },
         ];
 
         return (
@@ -64,9 +65,9 @@
                         {/* Desktop navigation */}
                         <div className="flex-1 flex max-md:hidden justify-center items-center space-x-8 px-6 py-2 rounded-full mx-8">
                             {navigation.map((item) => (
-                                <a
+                                <Link
                                     key={item.name}
-                                    href={item.href}
+                                    to={item.href}
                                     className={`text-gray-700 hover:text-primary px-4 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group ${
                                         activeSection === item.href.slice(1) ? 'text-primary' : ''
                                     }`}
@@ -75,7 +76,7 @@
                                     <span className={`absolute bottom-0 left-0 h-0.5 bg-primary ${
                                         activeSection === item.href.slice(1) ? 'w-full' : 'w-0 group-hover:w-full'
                                     } transition-all duration-300`}></span>
-                                </a>
+                                </Link>
                             ))}
                             <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
                                 Rezervă
@@ -106,13 +107,13 @@
                     <div className="md:hidden bg-white">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navigation.map((item) => (
-                                <a
+                                <Link
                                     key={item.name}
-                                    href={item.href}
+                                    to={item.href}
                                     className="block px-4 py-3 rounded-md text-lg font-semibold text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors duration-200"
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ))}
                             <button className="w-full bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-300">
                                 Rezervă

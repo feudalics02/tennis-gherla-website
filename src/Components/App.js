@@ -1,6 +1,8 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Review from "./Review";
+import Facilitati from "./Facilitati";
 import wallpaper from '../Images/wallpaper.jpg';
 import teren1 from '../Images/gallery/teren-1.jpeg';
 import teren2 from '../Images/gallery/teren-2.jpeg';
@@ -9,6 +11,14 @@ import teren4 from '../Images/gallery/teren-4.jpg';
 import { useEffect, useRef } from 'react';
 
 export default function App() {
+    return (
+        <Router>
+            <AppContent />
+        </Router>
+    );
+}
+
+function AppContent() {
     const aboutRef = useRef(null);
     const galleryRef = useRef(null);
     const reviewsRef = useRef(null);
@@ -33,7 +43,10 @@ export default function App() {
 
     return (
         <main className='min-h-screen flex flex-col'>
-            <Navbar selected={0}/>
+            <Navbar />
+            <Routes>
+                <Route path="/facilitati" element={<Facilitati />} />
+                <Route path="/" element={
             
             {/* Hero Section */}
             <div className='flex-grow relative h-[70vh] md:h-[80vh]'>
@@ -177,7 +190,9 @@ export default function App() {
                 </div>
             </section>
 
-            <Footer/>
-        </main>
+                    <Footer/>
+                </main>
+                } />
+            </Routes>
     );
 }
