@@ -89,7 +89,7 @@
                         <div className="flex md:hidden -ml-3">
                             <button
                                 onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                                className="inline-flex items-center justify-center p-2 -mr-3 rounded-md text-gray-700 hover:text-primary focus:outline-none"
+                                className="inline-flex items-center justify-center p-2 -ml-12 rounded-md text-gray-700 hover:text-primary focus:outline-none"
                             >
                                 {isMobileMenuOpen ? (
                                     <FaTimes className="h-6 w-6" />
