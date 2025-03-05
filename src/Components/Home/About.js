@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import teren4 from '../Images/gallery/teren-4.jpg';
+import teren4 from '../../Images/gallery/teren-4.jpg';
 
 export default function About({ aboutRef }) {
     return (

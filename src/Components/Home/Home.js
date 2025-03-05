@@ -1,9 +1,9 @@
 import { useRef, useEffect } from 'react';
-import Footer from "./Footer";
-import Review from "./Review";
+import Footer from "../Footer";
+import Review from "../Review";
 import About from "./About";
 import Gallery from "./Gallery";
-import wallpaper from '../Images/wallpaper.jpg';
+import wallpaper from '../../Images/wallpaper.jpg';
 
 export default function Home() {
     const aboutRef = useRef(null);
@@ -85,8 +85,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            <Footer/>
         </>
     );
 }
