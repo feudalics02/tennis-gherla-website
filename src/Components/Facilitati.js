@@ -1,6 +1,6 @@
 export default function Facilitati() {
     return (
-        <div id="facilitati" className="min-h-[calc(100vh-160px)] pt-20 pb-16 px-4 md:px-8 bg-white">
+        <div id="facilitati" className="h-[calc(100vh-160px)] pt-20 pb-16 px-4 md:px-8 bg-white overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
                     Facilitățile Noastre
