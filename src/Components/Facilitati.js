@@ -5,23 +5,21 @@ export default function Facilitati() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
                     Facilitățile Noastre
                 </h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4 text-gray-700">
-                        <p>
-                            Clubul nostru de tenis oferă o gamă completă de facilități pentru toți iubitorii de tenis:
-                        </p>
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>2 terenuri exterioare de zgură</li>
-                            <li>1 teren interioare de hard</li>
-                            <li>Vestiar</li>
-                            <li>Zonă de relaxare cu terasă</li>
-                            <li>Antrenori profesioniști</li>
-                            <li>Școală de tenis pentru copii și adulți</li>
-                            <li>Închiriere echipament</li>
-                            <li>Organizare turnee</li>
-                            <li>Rezervări online</li>
-                        </ul>
-                    </div>
+                <div className="space-y-4 text-gray-700">
+                    <p>
+                        Clubul nostru de tenis oferă o gamă completă de facilități pentru toți iubitorii de tenis:
+                    </p>
+                    <ul className="list-disc list-inside space-y-2">
+                        <li>2 terenuri exterioare de zgură</li>
+                        <li>1 teren interioare de hard</li>
+                        <li>Vestiar</li>
+                        <li>Zonă de relaxare cu terasă</li>
+                        <li>Antrenori profesioniști</li>
+                        <li>Școală de tenis pentru copii și adulți</li>
+                        <li>Închiriere echipament</li>
+                        <li>Organizare turnee</li>
+                        <li>Rezervări online</li>
+                    </ul>
                 </div>
             </div>
         </div>
