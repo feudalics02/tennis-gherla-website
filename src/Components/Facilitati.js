@@ -1,11 +1,11 @@
 export default function Facilitati() {
     return (
-        <div id="facilitati" className="h-[calc(100vh-250px)] pt-20 pb-16 px-4 md:px-8 bg-white overflow-hidden flex items-center">
-            <div className="max-w-6xl mx-auto w-full">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
+        <div id="facilitati" className="h-[calc(100vh-250px)] pt-20 pb-16 px-4 md:px-8 bg-white overflow-hidden flex items-center justify-center">
+            <div className="max-w-2xl mx-auto w-full text-center">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8">
                     Facilitățile Noastre
                 </h2>
-                <div className="space-y-4 text-gray-700">
+                <div className="space-y-4 text-gray-700 mx-auto">
                     <p>
                         Clubul nostru de tenis oferă o gamă completă de facilități pentru toți iubitorii de tenis:
                     </p>
