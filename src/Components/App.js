@@ -14,12 +14,14 @@ export default function App() {
 
 function AppContent() {
     return (
-        <main className='min-h-screen flex flex-col'>
+        <main className='flex flex-col'>
             <Navbar/>
-            <Routes>
-                <Route path="/facilitati" element={<Facilitati/>}/>
-                <Route path="/" element={<Home/>}/>
-            </Routes>
+            <div className='flex-grow'>
+                <Routes>
+                    <Route path="/facilitati" element={<Facilitati/>}/>
+                    <Route path="/" element={<Home/>}/>
+                </Routes>
+            </div>
             <Footer/>
         </main>
     );

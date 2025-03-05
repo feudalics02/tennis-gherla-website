@@ -1,4 +1,5 @@
     import { useState, useEffect } from 'react';
+    import { useLocation } from 'react-router-dom';
     import { FaBars, FaPhone, FaTimes } from 'react-icons/fa';
     import { Link } from 'react-router-dom';
     import logo from '../Images/logo.png';
@@ -6,17 +7,26 @@
     export default function Navbar() {
         const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
         const [activeSection, setActiveSection] = useState('acasa');
+        const location = useLocation();
+
+        useEffect(() => {
+            // Set active section based on route
+            const path = location.pathname.replace('/', '');
+            setActiveSection(path || 'acasa');
+        }, [location]);
 
         useEffect(() => {
             const handleScroll = () => {
-                const sections = ['acasa', 'facilitati', 'preturi', 'galerie', 'contact'];
-                for (const section of sections) {
-                    const element = document.getElementById(section);
-                    if (element) {
-                        const rect = element.getBoundingClientRect();
-                        if (rect.top <= 100 && rect.bottom >= 100) {
-                            setActiveSection(section);
-                            break;
+                if (location.pathname === '/') {
+                    const sections = ['acasa', 'facilitati', 'preturi', 'galerie', 'contact'];
+                    for (const section of sections) {
+                        const element = document.getElementById(section);
+                        if (element) {
+                            const rect = element.getBoundingClientRect();
+                            if (rect.top <= 100 && rect.bottom >= 100) {
+                                setActiveSection(section);
+                                break;
+                            }
                         }
                     }
                 }
@@ -24,7 +34,7 @@
 
             window.addEventListener('scroll', handleScroll);
             return () => window.removeEventListener('scroll', handleScroll);
-        }, []);
+        }, [location]);
 
         const navigation = [
             { name: 'Acasă', href: '/' },
