@@ -1,10 +1,10 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import wallpaper from '../Images/wallpaper.jpg';
-import teren1 from '../../public/gallery/teren-1.jpeg';
-import teren2 from '../../public/gallery/teren-2.jpeg';
-import teren3 from '../../public/gallery/teren-3.jpeg';
-import teren4 from '../../public/gallery/teren-4.jpg';
+import teren1 from '../Images/gallery/teren-1.jpeg';
+import teren2 from '../Images/gallery/teren-2.jpeg';
+import teren3 from '../Images/gallery/teren-3.jpeg';
+import teren4 from '../Images/gallery/teren-4.jpg';
 import { useEffect, useRef } from 'react';
 
 export default function App() {
