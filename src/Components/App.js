@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Review from "./Review";
 import wallpaper from '../Images/wallpaper.jpg';
 import teren1 from '../Images/gallery/teren-1.jpeg';
 import teren2 from '../Images/gallery/teren-2.jpeg';
@@ -170,26 +171,7 @@ export default function App() {
                                 message: 'Perfect!'
                             }
                         ].map((review, index) => (
-                            <div key={index} className='bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'>
-                                <div className='flex items-center space-x-4 mb-4'>
-                                    <div className='w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-primary font-semibold'>
-                                        {review.name[0]}
-                                    </div>
-                                    <div>
-                                        <h4 className='font-semibold'>{review.name}</h4>
-                                        <div className='flex space-x-1 text-yellow-400'>
-                                            {[...Array(5)].map((_, i) => (
-                                                <svg key={i} className='w-4 h-4 fill-current' viewBox="0 0 20 20">
-                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                                </svg>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className='text-gray-600'>
-                                    {review.message}
-                                </p>
-                            </div>
+                            <Review key={index} name={review.name} message={review.message} />
                         ))}
                     </div>
                 </div>
