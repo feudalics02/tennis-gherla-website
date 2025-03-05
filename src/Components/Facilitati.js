@@ -5,11 +5,11 @@ export default function Facilitati() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8">
                     Facilitățile Noastre
                 </h2>
-                <div className="space-y-4 text-gray-700 mx-auto">
+                <div className="space-y-4 text-gray-700 mx-auto text-left">
                     <p>
                         Clubul nostru de tenis oferă o gamă completă de facilități pentru toți iubitorii de tenis:
                     </p>
-                    <ul className="list-disc list-inside space-y-2">
+                    <ul className="list-disc list-inside space-y-2 pl-4">
                         <li>2 terenuri exterioare de zgură</li>
                         <li>1 teren interioare de hard</li>
                         <li>Vestiar</li>
