@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tennis-gherla-website/static/css/main.1bc65cec.css",
+    "main.js": "/tennis-gherla-website/static/js/main.91546c00.js",
+    "static/media/wallpaper.jpg": "/tennis-gherla-website/static/media/wallpaper.751f2f34dfc4253beb7c.jpg",
+    "static/media/logo.png": "/tennis-gherla-website/static/media/logo.014701192abf16a13eb2.png",
+    "index.html": "/tennis-gherla-website/index.html",
+    "main.1bc65cec.css.map": "/tennis-gherla-website/static/css/main.1bc65cec.css.map",
+    "main.91546c00.js.map": "/tennis-gherla-website/static/js/main.91546c00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bc65cec.css",
+    "static/js/main.91546c00.js"
+  ]
+}
