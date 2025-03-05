@@ -86,10 +86,10 @@
                         <div className="flex-1 md:hidden"></div>
 
                         {/* Mobile menu button */}
-                        <div className="flex md:hidden -ml-4">
+                        <div className="flex md:hidden -ml-2">
                             <button
                                 onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                                className="inline-flex items-center justify-center p-2 -mr-4 rounded-md text-gray-700 hover:text-primary focus:outline-none"
+                                className="inline-flex items-center justify-center p-2 -mr-2 rounded-md text-gray-700 hover:text-primary focus:outline-none"
                             >
                                 {isMobileMenuOpen ? (
                                     <FaTimes className="h-6 w-6" />
