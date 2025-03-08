@@ -12,7 +12,12 @@
         useEffect(() => {
             // Set active section based on route
             const path = location.pathname.replace('/', '');
-            setActiveSection(path || 'acasa');
+
+            if (path === '') {
+                setActiveSection('acasa');
+            } else {
+                setActiveSection(path);
+            }
         }, [location]);
 
         useEffect(() => {
