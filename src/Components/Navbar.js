@@ -126,6 +126,7 @@
                                 <Link
                                     key={item.id}
                                     to={item.href}
+                                    onClick={() => setMobileMenuOpen(false)}
                                     className="block px-4 py-3 rounded-md text-lg font-semibold text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors duration-200"
                                 >
                                     {item.name}
