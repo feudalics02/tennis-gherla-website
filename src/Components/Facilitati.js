@@ -23,6 +23,11 @@ export default function Facilitati() {
                         <li>Organizare de turnee</li>
                         <li>Închirierea echipamentului (inclusă în prețul terenului)</li>
                     </ul>
+                    <div className="mt-8 text-center">
+                        <p className="text-xl font-semibold text-primary">
+                            Te așteptăm pe teren! 🎾
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
