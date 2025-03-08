@@ -11,20 +11,19 @@ export default function Facilitati() {
                     </p>
                     <h3 className="font-semibold mt-6 mb-2">Facilități:</h3>
                     <ul className="list-disc list-inside space-y-2 pl-4">
-                        <li>2 terenuri exterioare de zgură</li>
-                        <li>1 teren interior de hard</li>
+                        <li>2 terenuri exterioare de <b>zgură</b></li>
+                        <li>1 teren acoperit de <b>hard</b></li>
                         <li>Vestiar</li>
                         <li>Zonă de relaxare cu terasă</li>
                     </ul>
                     <h3 className="font-semibold mt-6 mb-2">Servicii:</h3>
                     <ul className="list-disc list-inside space-y-2 pl-4">
-                        <li>Antrenori profesioniști</li>
                         <li>Cursuri de tenis pentru copii și adulți</li>
                         <li>Organizare de turnee</li>
                         <li>Închirierea echipamentului (inclusă în prețul terenului)</li>
                     </ul>
-                    <div className="mt-8 text-center">
-                        <p className="text-xl font-semibold text-primary">
+                    <div className="mt-32 text-center">
+                        <p className="text-xl mt-12 font-semibold text-primary">
                             Te așteptăm pe teren! 🎾
                         </p>
                     </div>
