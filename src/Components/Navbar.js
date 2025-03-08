@@ -97,10 +97,11 @@ export default function Navbar() {
                                 } transition-all duration-300`}></span>
                             </Link>
                         ))}
-                        <button
+                        <a
+                            href="tel:0743086789"
                             className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
                             Rezervă
-                        </button>
+                        </a>
                     </div>
 
                     {/* Spacer to push mobile menu button to the right */}
@@ -136,10 +137,11 @@ export default function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
-                        <button
-                            className="w-full bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-300">
+                        <a
+                            href="tel:0743086789"
+                            className="w-full bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-300 text-center">
                             Rezervă
-                        </button>
+                        </a>
                     </div>
                 </div>
             )}

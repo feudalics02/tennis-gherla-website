@@ -47,10 +47,11 @@ export default function Home() {
                             Destinația ta de top pentru excelență în tenis
                         </p>
                         <div className='animate-slide-up animation-delay-200'>
-                            <button
+                            <a
+                                href="tel:0743086789"
                                 className='bg-accent text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full hover:bg-secondary transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105'>
                                 Rezervă acum
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
