@@ -1,4 +1,4 @@
-export default function Facilitati() {
+export default function Facilities() {
     return (
         <div id="facilitati" className="min-h-[calc(100vh-250px)] pt-28 pb-20 px-4 md:px-8 bg-white flex items-center justify-center">
             <div className="max-w-2xl mx-auto w-full text-center">

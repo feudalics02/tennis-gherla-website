@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-
 import { useEffect } from 'react';
 import Navbar from "./Navbar";
 import Home from "./Home/Home";
-import Facilitati from "./Facilitati";
+import Facilities from "./Facilities";
 import Footer from "./Footer";
 
 export default function App() {
@@ -30,7 +30,7 @@ function AppContent() {
             <Navbar/>
             <div className='flex-grow pt-20'> {/* Add padding-top to account for navbar height */}
                 <Routes>
-                    <Route path="/facilitati" element={<Facilitati/>}/>
+                    <Route path="/facilitati" element={<Facilities/>}/>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
             </div>
