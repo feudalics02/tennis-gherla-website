@@ -22,6 +22,7 @@ export default function Facilities() {
                     <ul className="list-disc list-inside space-y-2 pl-4">
                         <li>Cursuri de tenis pentru copii și adulți</li>
                         <li>Organizare de turnee</li>
+                        <li>Racordare rachete</li>
                         <li>Închirierea echipamentului (inclusă în prețul terenului)</li>
                     </ul>
                     <div className="mt-32 text-center animate-fade-in-up delay-200">
