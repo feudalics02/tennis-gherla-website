@@ -1,7 +1,6 @@
-import { useRef } from 'react';
 import teren4 from '../../Images/gallery/teren-4.jpg';
 
-export default function About({ aboutRef }) {
+export default function About({aboutRef}) {
     return (
         <section ref={aboutRef} className='py-16 px-4 md:px-8 bg-white opacity-0'>
             <div className='max-w-6xl mx-auto'>

@@ -1,10 +1,9 @@
-import { useRef } from 'react';
 import teren1 from '../../Images/gallery/teren-1.jpeg';
 import teren2 from '../../Images/gallery/teren-2.jpeg';
 import teren3 from '../../Images/gallery/teren-3.jpeg';
 import teren4 from '../../Images/gallery/teren-4.jpg';
 
-export default function Gallery({ galleryRef }) {
+export default function Gallery({galleryRef}) {
     const handleImageClick = (index) => {
         const existingLightbox = document.getElementById('lightbox');
         if (existingLightbox) existingLightbox.remove();
@@ -31,9 +30,9 @@ export default function Gallery({ galleryRef }) {
 
         const img = new Image();
         img.src = index === 4 ? teren4 :
-                index === 1 ? teren1 :
+            index === 1 ? teren1 :
                 index === 2 ? teren2 :
-                teren3;
+                    teren3;
         img.className = 'rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain';
 
         imgContainer.appendChild(img);
@@ -58,12 +57,13 @@ export default function Gallery({ galleryRef }) {
                             <img
                                 src={index === 4 ? teren4 :
                                     index === 1 ? teren1 :
-                                    index === 2 ? teren2 :
-                                    teren3}
+                                        index === 2 ? teren2 :
+                                            teren3}
                                 alt={`Gallery ${index}`}
                                 className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                             />
-                            <div className='absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg'></div>
+                            <div
+                                className='absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg'></div>
                         </div>
                     ))}
                 </div>

@@ -1,5 +1,4 @@
-import { useRef, useEffect } from 'react';
-import Footer from "../Footer";
+import {useEffect, useRef} from 'react';
 import Review from "../Review";
 import About from "./About";
 import Gallery from "./Gallery";
@@ -38,7 +37,8 @@ export default function Home() {
                     className='w-full h-full object-cover object-center'
                     alt='Wallpaper'
                 />
-                <div className='absolute bottom-20 md:bottom-1/4 left-1/2 transform -translate-x-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
+                <div
+                    className='absolute bottom-20 md:bottom-1/4 left-1/2 transform -translate-x-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
                     <div className='space-y-6'>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight drop-shadow-lg'>
                             Tenis Club Gherla
@@ -56,8 +56,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <About aboutRef={aboutRef} />
-            <Gallery galleryRef={galleryRef} />
+            <About aboutRef={aboutRef}/>
+            <Gallery galleryRef={galleryRef}/>
 
             {/* Reviews Section */}
             <section ref={reviewsRef} className='py-16 px-4 md:px-8 bg-white opacity-0'>
