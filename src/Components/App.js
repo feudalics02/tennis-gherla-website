@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 export default function App() {
     return (
-        <Router>
+        <Router basename="/">
             <AppContent/>
         </Router>
     );
