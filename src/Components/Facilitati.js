@@ -2,10 +2,10 @@ export default function Facilitati() {
     return (
         <div id="facilitati" className="min-h-[calc(100vh-250px)] pt-28 pb-20 px-4 md:px-8 bg-white flex items-center justify-center">
             <div className="max-w-2xl mx-auto w-full text-center overflow-y-auto">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 animate-fade-in-up">
                     Facilitățile Noastre
                 </h2>
-                <div className="space-y-4 text-gray-700 mx-auto text-left">
+                <div className="space-y-4 text-gray-700 mx-auto text-left animate-fade-in-up delay-100">
                     <p>
                         Clubul nostru de tenis îți pune la dispoziție tot ce ai nevoie pentru a te bucura de acest sport, indiferent de nivelul tău de experiență.
                     </p>
@@ -22,8 +22,8 @@ export default function Facilitati() {
                         <li>Organizare de turnee</li>
                         <li>Închirierea echipamentului (inclusă în prețul terenului)</li>
                     </ul>
-                    <div className="mt-32 text-center">
-                        <p className="text-xl mt-12 font-semibold text-primary">
+                    <div className="mt-32 text-center animate-fade-in-up delay-200">
+                        <p className="text-xl mt-12 font-semibold text-primary animate-pulse">
                             Te așteptăm pe teren! 🎾
                         </p>
                     </div>
