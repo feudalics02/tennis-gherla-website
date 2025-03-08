@@ -39,7 +39,6 @@
         const navigation = [
             { name: 'Acasă', href: '/' },
             { name: 'Facilități', href: '/facilitati' },
-            { name: 'Prețuri', href: '/preturi' },
             { name: 'Galerie', href: '/galerie' },
             { name: 'Contact', href: '/contact' },
         ];
