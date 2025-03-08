@@ -39,7 +39,7 @@ export default function Home() {
                 />
                 <div
                     className='absolute bottom-20 md:bottom-1/4 left-1/2 transform -translate-x-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
-                    <div className='space-y-6'>
+                    <div className='space-y-10'>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight drop-shadow-lg'>
                             Tenis Club Gherla
                         </h1>
@@ -47,10 +47,11 @@ export default function Home() {
                             Destinația ta de top pentru excelență în tenis
                         </p>
                         <div className='animate-slide-up animation-delay-200'>
-                            <button
+                            <a
+                                href="tel:0743086789"
                                 className='bg-accent text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full hover:bg-secondary transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105'>
                                 Rezervă acum
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

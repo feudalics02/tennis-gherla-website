@@ -1,7 +1,7 @@
 export default function Facilities() {
     return (
         <div id="facilitati"
-             className="min-h-[calc(100vh-250px)] pt-28 pb-20 px-4 md:px-8 bg-white flex items-center justify-center">
+             className="min-h-[calc(100vh-250px)] pt-28 pb-10 px-4 md:px-8 bg-white flex items-center justify-center">
             <div className="max-w-2xl mx-auto w-full text-center">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 animate-fade-in-up">
                     Facilitățile Noastre
@@ -22,6 +22,7 @@ export default function Facilities() {
                     <ul className="list-disc list-inside space-y-2 pl-4">
                         <li>Cursuri de tenis pentru copii și adulți</li>
                         <li>Organizare de turnee</li>
+                        <li>Racordare rachete</li>
                         <li>Închirierea echipamentului (inclusă în prețul terenului)</li>
                     </ul>
                     <div className="mt-32 text-center animate-fade-in-up delay-200">
