@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.8e5b77cd.css",
-    "main.js": "./static/js/main.ebb67bee.js",
+    "main.css": "./static/css/main.b9355d4d.css",
+    "main.js": "./static/js/main.e9590c02.js",
     "static/media/teren-1.jpeg": "./static/media/teren-1.ed6ea888321ad7e6e85b.jpeg",
     "static/media/teren-2.jpeg": "./static/media/teren-2.a512b4cd384e8bffe2e1.jpeg",
     "static/media/teren-3.jpeg": "./static/media/teren-3.28f0e031bad5d3845a90.jpeg",
@@ -9,11 +9,11 @@
     "static/media/wallpaper.jpg": "./static/media/wallpaper.751f2f34dfc4253beb7c.jpg",
     "static/media/logo.png": "./static/media/logo.014701192abf16a13eb2.png",
     "index.html": "./index.html",
-    "main.8e5b77cd.css.map": "./static/css/main.8e5b77cd.css.map",
-    "main.ebb67bee.js.map": "./static/js/main.ebb67bee.js.map"
+    "main.b9355d4d.css.map": "./static/css/main.b9355d4d.css.map",
+    "main.e9590c02.js.map": "./static/js/main.e9590c02.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e5b77cd.css",
-    "static/js/main.ebb67bee.js"
+    "static/css/main.b9355d4d.css",
+    "static/js/main.e9590c02.js"
   ]
 }
