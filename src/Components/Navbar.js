@@ -42,10 +42,10 @@
         }, [location]);
 
         const navigation = [
-            { name: 'Acasă', href: '/' },
-            { name: 'Facilități', href: '/facilitati' },
-            { name: 'Galerie', href: '/galerie' },
-            { name: 'Contact', href: '/contact' },
+            { id: 1, name: 'Acasă', href: '/' },
+            { id: 2, name: 'Facilități', href: '/facilitati' },
+            { id: 3, name: 'Galerie', href: '/galerie' },
+            { id: 4, name: 'Contact', href: '/contact' },
         ];
 
         return (
@@ -80,7 +80,7 @@
                         <div className="flex-1 flex max-md:hidden justify-center items-center space-x-8 px-6 py-2 rounded-full mx-8">
                             {navigation.map((item) => (
                                 <Link
-                                    key={item.name}
+                                    key={item.id}
                                     to={item.href}
                                     className={`text-gray-700 hover:text-primary px-4 py-2 rounded-md text-lg font-semibold transition-colors duration-200 relative group ${
                                         activeSection === item.href.slice(1) ? 'text-primary' : ''
@@ -122,7 +122,7 @@
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navigation.map((item) => (
                                 <Link
-                                    key={item.name}
+                                    key={item.id}
                                     to={item.href}
                                     className="block px-4 py-3 rounded-md text-lg font-semibold text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors duration-200"
                                 >
