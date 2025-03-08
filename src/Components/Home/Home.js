@@ -39,7 +39,7 @@ export default function Home() {
                 />
                 <div
                     className='absolute bottom-20 md:bottom-1/4 left-1/2 transform -translate-x-1/2 text-center w-11/12 sm:w-4/5 md:w-auto'>
-                    <div className='space-y-6'>
+                    <div className='space-y-8'>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 animate-slide-up px-4 text-center leading-tight drop-shadow-lg'>
                             Tenis Club Gherla
                         </h1>
