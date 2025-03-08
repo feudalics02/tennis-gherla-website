@@ -69,11 +69,13 @@ export default function Navbar() {
                 <div className="flex items-center h-20 gap-8 bg-white/95 justify-center">
                     {/* Logo */}
                     <div className="flex-shrink-0 pl-4">
-                        <img
-                            src={logo}
-                            alt="Tennis Logo"
-                            className="h-16 w-auto hover:scale-105 transition-transform duration-300"
-                        />
+                        <Link to="/">
+                            <img
+                                src={logo}
+                                alt="Tennis Logo"
+                                className="h-16 w-auto hover:scale-105 transition-transform duration-300 cursor-pointer"
+                            />
+                        </Link>
                     </div>
 
                     {/* Desktop navigation */}
@@ -95,10 +97,11 @@ export default function Navbar() {
                                 } transition-all duration-300`}></span>
                             </Link>
                         ))}
-                        <button
+                        <a
+                            href="tel:0743086789"
                             className="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
                             Rezervă
-                        </button>
+                        </a>
                     </div>
 
                     {/* Spacer to push mobile menu button to the right */}
