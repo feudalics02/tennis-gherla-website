@@ -18,9 +18,16 @@ export default function Contact() {
                             <div>
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Adresă</h3>
                                 <p className="text-gray-600">
-                                    Strada Principală 123<br />
-                                    Gherla, Cluj<br />
-                                    România
+                                    <a 
+                                        href="https://www.google.com/maps?q=Strada+Parcului+33,+Gherla,+405300" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="hover:text-primary transition-colors"
+                                    >
+                                        Str. Parcului, nr. 33<br />
+                                        Gherla, 405300<br />
+                                        România
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -70,7 +77,8 @@ export default function Contact() {
                     <div className="rounded-lg overflow-hidden shadow-lg">
                         <iframe
                             title="Club Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.123456789012!2d23.900000000000006!3d46.900000000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDU0JzAwLjAiTiAyM8KwNTQnMDAuMCJF!5e0!3m2!1sen!2sro!4v1234567890123!5m2!1sen!2sro"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.123456789012!2d23.900000000000006!3d46.900000000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749f7b1b2b2b2b2%3A0xb2b2b2b2b2b2b2b2!2sStrada+Parcului+33%2C+Gherla+405300%2C+Romania!5e0!3m2!1sen!2sro!4v1234567890123!5m2!1sen!2sro"
+                            style={{ pointerEvents: 'none' }}
                             width="100%"
                             height="400"
                             style={{ border: 0 }}
