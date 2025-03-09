@@ -45,7 +45,7 @@ export default function Gallery({galleryRef}) {
     };
 
     return (
-        <section ref={galleryRef} className='py-16 px-4 md:px-8 bg-gray-50 opacity-0'>
+        <section ref={galleryRef} className='py-16 px-4 md:px-8 bg-gray-50 opacity-0 animate-fade-in' style={{ willChange: 'opacity, transform' }}>
             <div className='max-w-6xl mx-auto'>
                 <h2 className='text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center'>
                     Galerie Foto
