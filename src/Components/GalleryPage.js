@@ -116,6 +116,11 @@ export default function GalleryPage() {
                                 navigateImage(-1);
                             }}
                             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
+                            style={{ 
+                                animation: 'slideInLeft 0.3s ease-out 0.1s',
+                                willChange: 'transform, opacity',
+                                animationFillMode: 'backwards'
+                            }}
                         >
                             <FaChevronLeft className="w-6 h-6 text-white" />
                         </button>
