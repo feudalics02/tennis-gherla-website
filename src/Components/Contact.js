@@ -1,4 +1,4 @@
-import {FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock} from 'react-icons/fa';
+import {FaClock, FaEnvelope, FaMapMarkerAlt, FaPhone} from 'react-icons/fa';
 
 export default function Contact() {
     return (
@@ -80,10 +80,9 @@ export default function Contact() {
                             <iframe
                                 title="Club Location"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.123456789012!2d23.900000000000006!3d46.900000000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749f7b1b2b2b2b2%3A0xb2b2b2b2b2b2b2b2!2sStrada+Parcului+33%2C+Gherla+405300%2C+Romania!5e0!3m2!1sen!2sro!4v1234567890123!5m2!1sen!2sro"
-                                style={{pointerEvents: 'none'}}
+                                style={{pointerEvents: 'none', border: 0}}
                                 width="100%"
                                 height="400"
-                                style={{border: 0}}
                                 allowFullScreen=""
                                 loading="lazy"
                                 className="rounded-lg"
