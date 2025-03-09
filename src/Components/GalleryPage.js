@@ -27,6 +27,23 @@ export default function GalleryPage() {
         setSelectedIndex(newIndex);
     };
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (selectedIndex !== null) {
+                if (e.key === 'ArrowLeft') {
+                    navigateImage(-1);
+                } else if (e.key === 'ArrowRight') {
+                    navigateImage(1);
+                } else if (e.key === 'Escape') {
+                    closeImage();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [selectedIndex]);
+
     return (
         <section id="gallery" className="pt-28 pb-10 px-4 md:px-8 bg-white">
             <div className="opacity-0 animate-fade-in">
