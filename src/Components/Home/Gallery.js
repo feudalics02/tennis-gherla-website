@@ -1,9 +1,15 @@
 import teren1 from '../../Images/gallery/teren-1.jpeg';
 import teren2 from '../../Images/gallery/teren-2.jpeg';
 import teren3 from '../../Images/gallery/teren-3.jpeg';
-import teren4 from '../../Images/gallery/teren-4.jpg';
 
 export default function Gallery({galleryRef}) {
+    const images = {
+        1: teren1,
+        2: teren2,
+        3: teren3,
+        4: teren2,
+    };
+
     const handleImageClick = (index) => {
         const existingLightbox = document.getElementById('lightbox');
         if (existingLightbox) existingLightbox.remove();
@@ -29,10 +35,7 @@ export default function Gallery({galleryRef}) {
         closeBtn.querySelector('button').onclick = () => lightbox.remove();
 
         const img = new Image();
-        img.src = index === 4 ? teren4 :
-            index === 1 ? teren1 :
-                index === 2 ? teren2 :
-                    teren3;
+        img.src = images[index] || teren3;
         img.className = 'rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain';
 
         imgContainer.appendChild(img);
@@ -48,17 +51,14 @@ export default function Gallery({galleryRef}) {
                     Galerie Foto
                 </h2>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mx-auto w-fit'>
-                    {[1, 2, 3, 2].map((index) => (
+                    {[2, 1, 3, 4].map((index) => (
                         <div
                             key={index}
                             className='relative cursor-pointer justify-center justify-self-center mx-auto'
                             onClick={() => handleImageClick(index)}
                         >
                             <img
-                                src={index === 4 ? teren4 :
-                                    index === 1 ? teren1 :
-                                        index === 2 ? teren2 :
-                                            teren3}
+                                src={images[index] || teren3}
                                 alt={`Gallery ${index}`}
                                 className='w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105'
                             />
