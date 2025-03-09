@@ -76,6 +76,10 @@ export default function GalleryPage() {
                 <div 
                     className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
                     onClick={closeImage}
+                    style={{
+                        animation: 'fadeIn 0.3s ease-out',
+                        willChange: 'opacity'
+                    }}
                 >
                     <div className="relative max-w-[90vw] max-h-[90vh]">
                         {/* Close button */}
@@ -121,6 +125,11 @@ export default function GalleryPage() {
                                 navigateImage(1);
                             }}
                             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
+                            style={{ 
+                                animation: 'slideInRight 0.3s ease-out 0.1s',
+                                willChange: 'transform, opacity',
+                                animationFillMode: 'backwards'
+                            }}
                         >
                             <FaChevronRight className="w-6 h-6 text-white" />
                         </button>
