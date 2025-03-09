@@ -10,9 +10,16 @@ export default function GalleryPage() {
     const images = [teren1, teren2, teren3, teren4, teren5];
     const [selectedIndex, setSelectedIndex] = useState(null);
 
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+
     const openImage = (index) => {
+        setIsImageLoaded(false);
         setSelectedIndex(index);
         document.body.style.overflow = 'hidden';
+    };
+
+    const handleImageLoad = () => {
+        setIsImageLoaded(true);
     };
 
     const closeImage = () => {
@@ -106,7 +113,12 @@ export default function GalleryPage() {
                             src={images[selectedIndex]}
                             alt={`Teren ${selectedIndex + 1}`}
                             className="max-w-[90vw] max-h-[90vh] rounded-lg"
-                            style={{ objectFit: 'contain' }}
+                            style={{ 
+                                objectFit: 'contain',
+                                opacity: isImageLoaded ? 1 : 0,
+                                transition: 'opacity 0.3s ease-out'
+                            }}
+                            onLoad={handleImageLoad}
                         />
                         
                         {/* Navigation buttons */}
@@ -117,9 +129,10 @@ export default function GalleryPage() {
                             }}
                             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
                             style={{ 
-                                animation: 'slideInLeft 0.3s ease-out 0.1s',
-                                willChange: 'transform, opacity',
-                                animationFillMode: 'backwards'
+                                opacity: isImageLoaded ? 1 : 0,
+                                transform: `translateY(-50%) ${isImageLoaded ? 'translateX(0)' : 'translateX(-20px)'}`,
+                                transition: 'all 0.3s ease-out 0.1s',
+                                willChange: 'transform, opacity'
                             }}
                         >
                             <FaChevronLeft className="w-6 h-6 text-white" />
@@ -131,9 +144,10 @@ export default function GalleryPage() {
                             }}
                             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
                             style={{ 
-                                animation: 'slideInRight 0.3s ease-out 0.1s',
-                                willChange: 'transform, opacity',
-                                animationFillMode: 'backwards'
+                                opacity: isImageLoaded ? 1 : 0,
+                                transform: `translateY(-50%) ${isImageLoaded ? 'translateX(0)' : 'translateX(20px)'}`,
+                                transition: 'all 0.3s ease-out 0.1s',
+                                willChange: 'transform, opacity'
                             }}
                         >
                             <FaChevronRight className="w-6 h-6 text-white" />
