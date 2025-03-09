@@ -93,6 +93,12 @@ export default function GalleryPage() {
                         <button
                             onClick={closeImage}
                             className="absolute -top-12 right-0 p-2 text-white hover:text-gray-300 transition-colors"
+                            style={{ 
+                                opacity: isImageLoaded ? 1 : 0,
+                                transform: isImageLoaded ? 'translateY(0)' : 'translateY(-20px)',
+                                transition: 'all 0.3s ease-out 0.1s',
+                                willChange: 'transform, opacity'
+                            }}
                         >
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
