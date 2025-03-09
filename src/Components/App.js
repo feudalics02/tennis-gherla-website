@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Home from "./Home/Home";
 import Facilities from "./Facilities";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ function AppContent() {
             <div className='flex-grow pt-20'> {/* Add padding-top to account for navbar height */}
                 <Routes>
                     <Route path="/facilitati" element={<Facilities/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
             </div>
