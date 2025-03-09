@@ -52,7 +52,7 @@ export default function GalleryPage() {
 
     return (
         <section id="gallery" className="pt-28 pb-10 px-4 md:px-8 bg-white">
-            <div className="opacity-0 animate-fade-in">
+            <div className="opacity-0 animate-fade-in" style={{ willChange: 'opacity, transform' }}>
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
                         Galerie Foto

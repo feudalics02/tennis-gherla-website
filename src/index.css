@@ -17,6 +17,8 @@
 
 .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 @layer utilities {
