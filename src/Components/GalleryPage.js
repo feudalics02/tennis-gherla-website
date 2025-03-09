@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import teren1 from '../Images/gallery/teren-1.jpeg';
 import teren2 from '../Images/gallery/teren-2.jpeg';
