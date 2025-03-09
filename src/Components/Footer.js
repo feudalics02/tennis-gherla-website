@@ -10,22 +10,22 @@ export default function Footer() {
                 </div>
                 <div className='w-24 h-px bg-white/50'></div>
                 <div className='flex flex-col items-center space-y-2'>
-                    <a 
+                    <a
                         href="https://www.google.com/maps/place/Strada+Parcului+33,+Gherla+405300/@47.0269441,23.9140004,17z/data=!3m1!4b1!4m6!3m5!1s0x4747f8f1b1b5b5b5:0x1b1b5b5b5b5b5b5b!8m2!3d47.0269441!4d23.9140004!16s%2Fg%2F11c5x5x5x5?entry=ttu"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 hover:text-accent transition-colors duration-200"
                     >
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            className="h-5 w-5" 
-                            viewBox="0 0 20 20" 
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
                             fill="currentColor"
                         >
-                            <path 
-                                fillRule="evenodd" 
-                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" 
-                                clipRule="evenodd" 
+                            <path
+                                fillRule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clipRule="evenodd"
                             />
                         </svg>
                         <span>Strada Parcului 33, Gherla 405300</span>

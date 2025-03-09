@@ -137,11 +137,6 @@ export default function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
-                        <a
-                            href="tel:0743086789"
-                            className="w-full bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-300 text-center">
-                            Rezervă
-                        </a>
                     </div>
                 </div>
             )}
