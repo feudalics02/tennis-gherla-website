@@ -30,7 +30,7 @@ function AppContent() {
     return (
         <main className='flex flex-col min-h-screen'>
             <Navbar/>
-            <div className='flex-grow pt-20'> {/* Add padding-top to account for navbar height */}
+            <div className='flex-grow pt-20'>
                 <Routes>
                     <Route path="/facilitati" element={<Facilities/>}/>
                     <Route path="/contact" element={<Contact/>}/>

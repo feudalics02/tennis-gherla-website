@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.8e5b77cd.css",
-    "main.js": "./static/js/main.ebb67bee.js",
+    "main.css": "./static/css/main.de481406.css",
+    "main.js": "./static/js/main.d2a034b8.js",
     "static/media/teren-1.jpeg": "./static/media/teren-1.ed6ea888321ad7e6e85b.jpeg",
     "static/media/teren-2.jpeg": "./static/media/teren-2.a512b4cd384e8bffe2e1.jpeg",
     "static/media/teren-3.jpeg": "./static/media/teren-3.28f0e031bad5d3845a90.jpeg",
+    "static/media/teren-5.jpeg": "./static/media/teren-5.5cf26c13ad308b75c874.jpeg",
     "static/media/teren-4.jpg": "./static/media/teren-4.d860c06a096f8a4a4679.jpg",
     "static/media/wallpaper.jpg": "./static/media/wallpaper.751f2f34dfc4253beb7c.jpg",
     "static/media/logo.png": "./static/media/logo.014701192abf16a13eb2.png",
     "index.html": "./index.html",
-    "main.8e5b77cd.css.map": "./static/css/main.8e5b77cd.css.map",
-    "main.ebb67bee.js.map": "./static/js/main.ebb67bee.js.map"
+    "main.de481406.css.map": "./static/css/main.de481406.css.map",
+    "main.d2a034b8.js.map": "./static/js/main.d2a034b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e5b77cd.css",
-    "static/js/main.ebb67bee.js"
+    "static/css/main.de481406.css",
+    "static/js/main.d2a034b8.js"
   ]
 }

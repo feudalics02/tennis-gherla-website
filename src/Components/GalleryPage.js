@@ -1,5 +1,5 @@
-import { useEffect, useState, useCallback } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import {useCallback, useEffect, useState} from 'react';
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa';
 import teren1 from '../Images/gallery/teren-1.jpeg';
 import teren2 from '../Images/gallery/teren-2.jpeg';
 import teren3 from '../Images/gallery/teren-3.jpeg';
@@ -140,7 +140,7 @@ export default function GalleryPage() {
                                 willChange: 'transform, opacity'
                             }}
                         >
-                            <FaChevronLeft className="w-6 h-6 text-white" />
+                            <FaChevronLeft className="w-6 h-6 text-white"/>
                         </button>
                         <button
                             onClick={(e) => {
@@ -155,7 +155,7 @@ export default function GalleryPage() {
                                 willChange: 'transform, opacity'
                             }}
                         >
-                            <FaChevronRight className="w-6 h-6 text-white" />
+                            <FaChevronRight className="w-6 h-6 text-white"/>
                         </button>
                     </div>
                 </div>
