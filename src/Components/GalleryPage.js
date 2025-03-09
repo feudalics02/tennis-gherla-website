@@ -49,7 +49,7 @@ export default function GalleryPage() {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [selectedIndex]);
+    }, [selectedIndex, navigateImage]);
 
     return (
         <section id="gallery" className="pt-28 pb-10 px-4 md:px-8 bg-white">
