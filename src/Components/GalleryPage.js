@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import teren1 from '../Images/gallery/teren-1.jpeg';
 import teren2 from '../Images/gallery/teren-2.jpeg';
@@ -9,7 +9,6 @@ import teren5 from '../Images/gallery/teren-5.jpeg';
 export default function GalleryPage() {
     const images = [teren1, teren2, teren3, teren4, teren5];
     const [selectedIndex, setSelectedIndex] = useState(null);
-
     const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     const openImage = (index) => {
@@ -27,12 +26,12 @@ export default function GalleryPage() {
         document.body.style.overflow = 'auto';
     };
 
-    const navigateImage = (direction) => {
+    const navigateImage = useCallback((direction) => {
         let newIndex = selectedIndex + direction;
         if (newIndex < 0) newIndex = images.length - 1;
         if (newIndex >= images.length) newIndex = 0;
         setSelectedIndex(newIndex);
-    };
+    }, [selectedIndex, images.length]);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
@@ -49,7 +48,7 @@ export default function GalleryPage() {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [selectedIndex, navigateImage]);
+    }, [selectedIndex, navigateImage]); // Now include navigateImage in the dependencies array
 
     return (
         <section id="gallery" className="pt-28 pb-10 px-4 md:px-8 bg-white">
@@ -61,7 +60,7 @@ export default function GalleryPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {images.map((img, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="relative cursor-pointer hover:scale-105 transition-transform duration-300"
                                 onClick={() => openImage(index)}
@@ -80,7 +79,7 @@ export default function GalleryPage() {
 
             {/* Lightbox */}
             {selectedIndex !== null && (
-                <div 
+                <div
                     className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
                     onClick={closeImage}
                     style={{
@@ -93,40 +92,40 @@ export default function GalleryPage() {
                         <button
                             onClick={closeImage}
                             className="absolute -top-12 right-0 p-2 text-white hover:text-gray-300 transition-colors"
-                            style={{ 
+                            style={{
                                 opacity: isImageLoaded ? 1 : 0,
                                 transform: isImageLoaded ? 'translateY(0)' : 'translateY(-20px)',
                                 transition: 'all 0.3s ease-out 0.1s',
                                 willChange: 'transform, opacity'
                             }}
                         >
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                className="h-8 w-8" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="currentColor" 
-                                strokeWidth="2" 
-                                strokeLinecap="round" 
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-8 w-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
                                 <line x1="18" y1="6" x2="6" y2="18"></line>
                                 <line x1="6" y1="6" x2="18" y2="18"></line>
                             </svg>
                         </button>
-                        
+
                         <img
                             src={images[selectedIndex]}
                             alt={`Teren ${selectedIndex + 1}`}
                             className="max-w-[90vw] max-h-[90vh] rounded-lg"
-                            style={{ 
+                            style={{
                                 objectFit: 'contain',
                                 opacity: isImageLoaded ? 1 : 0,
                                 transition: 'opacity 0.3s ease-out'
                             }}
                             onLoad={handleImageLoad}
                         />
-                        
+
                         {/* Navigation buttons */}
                         <button
                             onClick={(e) => {
@@ -134,7 +133,7 @@ export default function GalleryPage() {
                                 navigateImage(-1);
                             }}
                             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
-                            style={{ 
+                            style={{
                                 opacity: isImageLoaded ? 1 : 0,
                                 transform: `translateY(-50%) ${isImageLoaded ? 'translateX(0)' : 'translateX(-20px)'}`,
                                 transition: 'all 0.3s ease-out 0.1s',
@@ -149,7 +148,7 @@ export default function GalleryPage() {
                                 navigateImage(1);
                             }}
                             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 p-3 rounded-full hover:bg-white/30 transition-colors"
-                            style={{ 
+                            style={{
                                 opacity: isImageLoaded ? 1 : 0,
                                 transform: `translateY(-50%) ${isImageLoaded ? 'translateX(0)' : 'translateX(20px)'}`,
                                 transition: 'all 0.3s ease-out 0.1s',
