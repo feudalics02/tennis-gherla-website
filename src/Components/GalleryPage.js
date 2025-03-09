@@ -35,17 +35,17 @@ export default function GalleryPage() {
                         Galerie Foto
                     </h2>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {images.map((img, index) => (
                             <div 
                                 key={index}
-                                className="relative aspect-square cursor-pointer hover:scale-105 transition-transform duration-300"
+                                className="relative cursor-pointer hover:scale-105 transition-transform duration-300"
                                 onClick={() => openImage(index)}
                             >
                                 <img
                                     src={img}
                                     alt={`Teren ${index + 1}`}
-                                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                                    className="w-full h-auto rounded-lg shadow-lg"
                                     loading="lazy"
                                 />
                             </div>
@@ -64,7 +64,8 @@ export default function GalleryPage() {
                         <img
                             src={images[selectedIndex]}
                             alt={`Teren ${selectedIndex + 1}`}
-                            className="max-w-full max-h-full object-contain rounded-lg"
+                            className="max-w-[90vw] max-h-[90vh] rounded-lg"
+                            style={{ objectFit: 'contain' }}
                         />
                         
                         {/* Navigation buttons */}
