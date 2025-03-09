@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import Facilities from "./Facilities";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import GalleryPage from "./GalleryPage";
 
 export default function App() {
     return (
@@ -33,6 +34,7 @@ function AppContent() {
                 <Routes>
                     <Route path="/facilitati" element={<Facilities/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/galerie" element={<GalleryPage/>}/>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
             </div>
